@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+
+<div>
+    <input #titleValue>
+    <button (click)="updatePage(titleValue.value)">Submit</button>
+    <p class="greentext" *ngIf="itsAvailable">{{ Available }}</p>
+    <p class="redtext" *ngIf="itsNotAvailable">{{ NotAvailable }}</p>
+   
+</div>
+
+<h2>Bikes feel</h2>
+<app-content-card *ngFor = "let item of (BikesName | Bikestype:'Feel'  ); index as i" 
+[Bike] = "item" [class.Feel] = "i+1">
+</app-content-card>
+
+<h2>CBR rider</h2>
+<app-content-card *ngFor = "let item of (BikeList | Biketype:'Rider' ); index as i" 
+[BikeItem] = "item" [class.Rider]="i+1">
+</app-content-card>
+
+</app-content-card>
