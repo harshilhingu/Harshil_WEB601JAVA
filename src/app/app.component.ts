@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Content } from './models/content';
-import { List } from './models/list';
+
 
 @Component({
   selector: 'app-root',
@@ -9,11 +9,11 @@ import { List } from './models/list';
 })
 export class AppComponent {
   title = 'H_Hingu_Bike';
-  myList: List;
+
 
   constructor() {
     let contentitem: Content;
-    this.myList = new List();
+    
 
     contentitem = {
       id: 0,
@@ -22,7 +22,7 @@ export class AppComponent {
       imageLink: "https://wallpaperaccess.com/cbr-bike",
       type: "Race bike",
     };
-    this.myList.addContent(contentitem);
+
     contentitem = {
       id: 1,
       title: 'BMW',
@@ -31,7 +31,7 @@ export class AppComponent {
       type: "Race bike",
 
     };
-    this.myList.addContent(contentitem);
+   
     contentitem = {
       id: 2,
       title: 'Duggatti',
@@ -40,7 +40,7 @@ export class AppComponent {
       type: "play",
  
     };
-    this.myList.addContent(contentitem);
+    
     contentitem = {
       id: 3,
       title: 'splender',
@@ -49,7 +49,7 @@ export class AppComponent {
       type: "old man",
 
     };
-    this.myList.addContent(contentitem);
+
 
   }
 }
