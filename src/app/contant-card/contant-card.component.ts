@@ -13,7 +13,7 @@ export class ContentCardComponent implements OnInit {
     // this.content = {
     //   id: 0,
     //   title: '',
-    //   author: '',
+    //  
     //   type: ''
     // };
   }
